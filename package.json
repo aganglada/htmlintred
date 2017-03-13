@@ -1,0 +1,8 @@
+{
+  "name": "htmlintred",
+  "version": "1.0.0",
+  "description": "css html linter",
+  "repository": "git@github.com:aganglada/htmlintred.git",
+  "author": "Alejandro Garcia Anglada <aganglada@gmail.com>",
+  "license": "MIT"
+}
