@@ -11,10 +11,15 @@ a:not([href]),
 a[href="#"],
 a[href=""],
 a[href*="javascript:void(0)"],
+a:not([target="_blank"]),
+a:not([target="_self"]),
+a:not([target="_parent"]),
+a:not([target="_top"]),
 
 /* Unaccessible Images */
 img:not([alt]),
 img[alt=""],
+img[src=""],
 
 /* Missing Document Language */
 html:not([lang]),
@@ -45,7 +50,10 @@ a:empty,
 
 /* Unnecessary or Deprecated Attributes */
 script[type="text/javascript"],
-link[rel="stylesheet"][type="text/css"]
+link[rel="stylesheet"][type="text/css"],
+
+/* Invalid roles */
+div[role="nav"]
 {
     border: 2px solid red;
 }
